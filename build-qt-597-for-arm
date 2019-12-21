@@ -1,0 +1,9 @@
+./configure  -v \
+        -prefix  /data/qtbuild/output   \
+        -xplatform linux-aarch64-gnu-g++  \
+        -opensource -release -confirm-license \
+        -nomake tests -nomake examples       \
+        -recheck-all   \
+        -gstreamer   \
+        -sysroot  <PATH>/host/aarch64-buildroot-linux-gnu/sysroot/ \
+        -skip qtwayland  -qt-xcb -no-opengl
